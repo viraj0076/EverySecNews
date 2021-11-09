@@ -19,7 +19,7 @@ const NewsItem = (props) => {
                     <p className="card-text" >{description}...</p>
                     <p class="card-text"><small className="text-muted">By {author} On {new Date(date).toGMTString()}</small></p>
                     <center>
-                    <a href={newsUrl} style={{background: 'red', width:'350px', fontFamily: 'Cairo',borderRadius:'105px'}}  className="btn btn-danger">Read More</a>
+                    <a href={newsUrl} style={{background: 'red', fontFamily: 'Cairo',borderRadius:'105px'}}  className="btn btn-danger">Read More</a>
                         </center>
                 </div>
             </div>
