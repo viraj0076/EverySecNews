@@ -39,10 +39,7 @@ const App = () => {
 
         </Router>
 
-      </div>
-     
-   
-     
+      </div>  
     </>
   )
 }
