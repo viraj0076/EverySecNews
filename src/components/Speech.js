@@ -16,7 +16,6 @@ const Speech = () => {
        const utterance = new  SpeechSynthesisUtterance(text)
         speechSynthesis.speak(utterance)
     }
-   // pauseButton = () => { pauseText() }
     stopButton = () => { stopText() }
 
 
@@ -43,10 +42,8 @@ const Speech = () => {
                 </h1>
             </center>
             <textarea class="form-control" placeholder="Enter the Text"  value={text} onChange={handleOnClick} id="text" style={{ height: '350px', margin: '35px 0px', marginTop: '32px', borderColor:'red',boxShadow: '0 0 0 0.25rem red' }} />
-            {/* <label for="speed" onInput={speedInput}>Speed</label> */}
 
             <button className="btn btn-primary mx-1" id="play-button" style={{background:'red' ,width:'150px', fontFamily: 'Cairo',borderRadius:'105px'}} onClick={playButton}> Play Text</button>
-            {/* <button id="pause-button" onClick={pauseButton}> Pause</button> */}
             <button className="btn btn-primary mx-1" id="stop-button" style={{background:'red' ,width:'150px', fontFamily: 'Cairo',borderRadius:'105px'}}  onClick={stopButton}> Stop Text</button>
             <button className="btn btn-primary mx-1" id="clear-button" style={{background:'red' ,width:'150px', fontFamily: 'Cairo',borderRadius:'105px'}}  onClick={ClearText}> Clear Text</button>
 
